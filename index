@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop Culture: Future Aesthetics</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+body{color:#fff;background:linear-gradient(135deg,#ff00cc,#3333ff);text-align:center;}
+nav{display:flex;justify-content:center;gap:20px;padding:20px;background:rgba(0,0,0,.3);}
+nav a{text-decoration:none;color:white;font-weight:600;}
+nav a:hover{color:#ffcc00;}
+h1{font-size:3rem;margin-top:60px;animation:pulse 2s infinite alternate;}
+@keyframes pulse{to{transform:scale(1.05) rotate(2deg);}}
+section{padding:60px 20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.box{background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;}
+.btn{display:inline-block;margin-top:20px;padding:10px 25px;background:#ffcc00;color:#000;border-radius:30px;text-decoration:none;}
+.btn:hover{transform:scale(1.1);}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#trends">Visual Trends</a>
+  <a href="#type">Typography</a>
+  <a href="#layout">Layouts</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h1>THE FUTURE<br>OF POP CULTURE</h1>
+  <p>Exploring how pop culture inspires future aesthetics.</p>
+  <a href="#trends" class="btn">Discover More</a>
+</section>
+
+<section id="trends">
+  <h2>Visual Trends</h2>
+  <div class="grid">
+    <div class="box">Vaporwave Revival</div>
+    <div class="box">3D Surrealism</div>
+    <div class="box">Motion Blur Aesthetic</div>
+  </div>
+</section>
+
+<section id="type">
+  <h2>Typography & Color</h2>
+  <p>Bold sans-serifs and neon gradients define the future look.</p>
+</section>
+
+<section id="layout">
+  <h2>Layout Innovations</h2>
+  <div class="grid">
+    <div class="box">Asymmetry</div>
+    <div class="box">Overlapping Elements</div>
+    <div class="box">Flexbox & Grids</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Reflection</h2>
+  <p>Design will evolve with emotion, nostalgia, and interactivity.</p>
+</section>
+
+</body>
+</html>
 
