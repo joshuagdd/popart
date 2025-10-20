@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  /* Darkened neon gradient with more depth */
-  background: linear-gradient(135deg, #3b0a63, #1a1a40, #003049);
+  /* New futuristic gradient */
+  background: linear-gradient(135deg, #3B0270, #6F00FF, #00CAFF);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #ffffff;
@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* animated gradient movement */
 @keyframes gradientShift {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
@@ -36,9 +35,9 @@ header {
 }
 
 h1 {
-  font-family: 'Cinzel', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 2.5em;
-  color: #f0eaff;
+  color: #f5f4ff;
   letter-spacing: 1.5px;
 }
 
@@ -54,8 +53,8 @@ nav a {
   transition: color 0.3s, text-shadow 0.3s;
 }
 nav a:hover {
-  color: #f9d923;
-  text-shadow: 0 0 10px #f9d923;
+  color: #00CAFF;
+  text-shadow: 0 0 10px #00CAFF;
 }
 
 /* HERO SECTION */
@@ -65,10 +64,10 @@ nav a:hover {
   margin: auto;
 }
 .hero h2 {
-  font-family: 'Cinzel', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 2em;
   margin-bottom: 12px;
-  color: #fff;
+  color: #ffffff;
 }
 .hero p {
   font-size: 1.1em;
@@ -88,8 +87,8 @@ nav a:hover {
 }
 .hero .btn:hover {
   background: #fff;
-  color: #3b0a63;
-  box-shadow: 0 0 20px #f9d923, 0 0 40px #00bbf9;
+  color: #3B0270;
+  box-shadow: 0 0 20px #6F00FF, 0 0 40px #00CAFF;
 }
 
 /* CARD GRID */
@@ -111,7 +110,7 @@ nav a:hover {
 }
 .card:hover {
   transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 0 20px #f9d923, 0 0 30px #00bbf9;
+  box-shadow: 0 0 20px #6F00FF, 0 0 30px #00CAFF;
 }
 .card img {
   width: 100%;
@@ -136,7 +135,7 @@ nav a:hover {
   margin: auto;
 }
 .contact a {
-  color: #f9d923;
+  color: #00CAFF;
   text-decoration: none;
 }
 .contact a:hover {
@@ -152,5 +151,6 @@ footer {
   opacity: 0.9;
   color: #ddd;
 }
+
 
 
