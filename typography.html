@@ -3,12 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Palette of Power</title>
+  <title>The Palette of the Future</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #2a004f, #090021);
+      color: #f5f5f5;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      color: #f8dfff;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #a6ffea;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+
+    .palette-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      padding: 60px 20px;
+    }
+
+    .palette {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 20px;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    .palette h2 {
+      font-family: 'Cinzel', serif;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .colors {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .color {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .palette p {
+      font-size: 14px;
+      color: #cfcfcf;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>The Palette of Power</h1>
+    <h1>The Palette of the Future</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="trends.html">Visual Trends</a>
@@ -18,15 +100,45 @@
     </nav>
   </header>
 
-  <section class="palette">
-    <img src="images/color_palette.png" alt="Legendary Kali color palette">
-    <ul>
-      <li><b>Amethyst (Fionah)</b> – strength through serenity</li>
-      <li><b>Bioluminescent Blue (Rykko)</b> – courage in light</li>
-      <li><b>Crimson (Benedetta)</b> – emotion and rebellion</li>
-    </ul>
+  <section class="palette-section">
+    <!-- Cyber Glow -->
+    <div class="palette">
+      <h2>Cyber Glow</h2>
+      <div class="colors">
+        <div class="color" style="background:#00FFF7;"></div>
+        <div class="color" style="background:#6F00FF;"></div>
+        <div class="color" style="background:#FF00A0;"></div>
+        <div class="color" style="background:#0C0C0C;"></div>
+      </div>
+      <p>Electric tones meet dark contrast — representing the vibrant pulse of future tech and design.</p>
+    </div>
+
+    <!-- Eco Future -->
+    <div class="palette">
+      <h2>Eco Future</h2>
+      <div class="colors">
+        <div class="color" style="background:#B6FFCE;"></div>
+        <div class="color" style="background:#4CAF50;"></div>
+        <div class="color" style="background:#2E7D32;"></div>
+        <div class="color" style="background:#004D40;"></div>
+      </div>
+      <p>Soft greens and organic hues — the harmony between technology and sustainability.</p>
+    </div>
+
+    <!-- Digital Warmth -->
+    <div class="palette">
+      <h2>Digital Warmth</h2>
+      <div class="colors">
+        <div class="color" style="background:#FFD460;"></div>
+        <div class="color" style="background:#FF7A00;"></div>
+        <div class="color" style="background:#FF3C38;"></div>
+        <div class="color" style="background:#1B1B1B;"></div>
+      </div>
+      <p>Warm futuristic tones that emphasize emotion, creativity, and the human touch in digital art.</p>
+    </div>
   </section>
 
-  <footer>© 2025 Legendary Kali Exhibit</footer>
+  <footer>© 2025 PopArt Exhibit</footer>
 </body>
 </html>
+
