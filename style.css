@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -8,128 +8,149 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #7a00ff, #ffcc00, #00e1ff);
+  background: linear-gradient(135deg, #9b5de5, #f9d923, #00bbf9);
   background-size: 400% 400%;
-  animation: gradientShift 10s ease infinite;
+  animation: gradientShift 12s ease infinite;
   color: #ffffff;
   text-align: center;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* animated background gradient */
+/* animated gradient movement */
 @keyframes gradientShift {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
 
-/* HEADER + NAV */
+/* HEADER */
 header {
-  background: rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
-  padding: 18px;
+  padding: 18px 0;
   position: sticky;
   top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  z-index: 1000;
 }
 
-header a {
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
   color: #fff;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 10px #fff, 0 0 25px #ff00ff;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: 600;
-  font-family: 'Orbitron', sans-serif;
   transition: color 0.3s, text-shadow 0.3s;
 }
-header a:hover {
-  color: #ffcc00;
-  text-shadow: 0 0 10px #ffcc00;
+nav a:hover {
+  color: #f9d923;
+  text-shadow: 0 0 10px #fff, 0 0 20px #f9d923;
 }
 
-/* HERO / LANDING */
+/* HERO SECTION */
 .hero {
-  padding: 90px 20px;
+  padding: 100px 20px;
   max-width: 800px;
   margin: auto;
 }
-.hero h1 {
+.hero h2 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.8em;
+  font-size: 2em;
   margin-bottom: 12px;
-  color: #ffffff;
-  text-shadow: 0 0 12px rgba(255,255,255,0.6);
-  transition: transform 0.4s ease;
-}
-.hero h1:hover {
-  transform: scale(1.05);
+  color: #fff;
+  text-shadow: 0 0 10px #00bbf9, 0 0 25px #9b5de5;
 }
 .hero p {
   font-size: 1.1em;
-  line-height: 1.7em;
-  color: #eafaff;
   opacity: 0.9;
+  line-height: 1.7em;
 }
 .hero .btn {
   display: inline-block;
   margin-top: 25px;
-  padding: 12px 30px;
+  padding: 12px 28px;
   border: 2px solid #fff;
   color: #fff;
-  text-decoration: none;
   border-radius: 25px;
-  font-weight: 600;
-  transition: all 0.3s;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 .hero .btn:hover {
-  background: #ffcc00;
-  color: #000;
-  box-shadow: 0 0 20px #ffcc00;
+  background: #fff;
+  color: #9b5de5;
+  box-shadow: 0 0 20px #fff, 0 0 40px #f9d923;
 }
 
-/* CARD / GRID */
+/* CARD GRID */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
   padding: 60px 20px;
+  gap: 30px;
 }
 .card {
-  background: rgba(255,255,255,0.1);
-  border-radius: 12px;
-  width: 280px;
+  width: 270px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
   padding: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-  transition: transform 0.4s, box-shadow 0.4s;
+  transition: all 0.4s;
+  border: 2px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(5px);
 }
 .card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 25px rgba(255,255,255,0.3);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #fff, 0 0 50px #00bbf9;
 }
 .card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 .card h3 {
-  color: #ffcc00;
+  color: #fff;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 6px;
 }
 .card p {
   font-size: 0.95em;
-  color: #fefefe;
-  opacity: 0.85;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+.contact a {
+  color: #f9d923;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
 footer {
+  margin-top: 40px;
   padding: 20px;
-  background: rgba(0,0,0,0.4);
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255,255,255,0.3);
   font-size: 0.9em;
-  color: #ffffffb0;
+  opacity: 0.9;
+  color: #fff;
 }
+
 
