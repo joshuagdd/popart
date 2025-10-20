@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600&family=Cinzel:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Cinzel', sans-serif;
+  font-family: 'Lato', sans-serif;
   background: linear-gradient(135deg, #9b5de5, #f9d923, #00bbf9);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
@@ -34,11 +34,10 @@ header {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-size: 2.5em;
   color: #fff;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 10px #fff, 0 0 25px #ff00ff;
 }
 
 /* NAVIGATION */
@@ -54,7 +53,6 @@ nav a {
 }
 nav a:hover {
   color: #f9d923;
-  text-shadow: 0 0 10px #fff, 0 0 20px #f9d923;
 }
 
 /* HERO SECTION */
@@ -64,11 +62,10 @@ nav a:hover {
   margin: auto;
 }
 .hero h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-size: 2em;
   margin-bottom: 12px;
   color: #fff;
-  text-shadow: 0 0 10px #00bbf9, 0 0 25px #9b5de5;
 }
 .hero p {
   font-size: 1.1em;
