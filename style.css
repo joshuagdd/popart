@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600&display=swap');
 
 * {
   margin: 0;
@@ -7,11 +7,11 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background: linear-gradient(135deg, #2c1b0e, #4a2c17, #6b4021);
-  color: #f5e8d0;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #643dcf, #5e74ff, #3dc5ff);
+  color: #f8f9ff;
   background-attachment: fixed;
+  text-align: center;
 }
 
 /* HEADER */
@@ -26,23 +26,22 @@ h1 {
   font-family: 'Cinzel', serif;
   font-size: 2.4em;
   margin-bottom: 10px;
-  color: #f7d29b;
-  letter-spacing: 1px;
-  text-shadow: 0 0 6px rgba(247, 210, 155, 0.3);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(140, 200, 255, 0.5);
 }
 
 nav a {
-  color: #f5e8d0;
+  color: #e0eaff;
   margin: 0 12px;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #f7d29b;
+  color: #ffffff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   padding: 100px 20px;
   max-width: 700px;
@@ -52,32 +51,32 @@ nav a:hover {
   font-family: 'Cinzel', serif;
   font-size: 2em;
   margin-bottom: 10px;
-  color: #ffe1b5;
-  text-shadow: 0 0 5px rgba(255, 225, 181, 0.3);
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 .hero p {
   font-size: 1.1em;
   line-height: 1.7em;
   opacity: 0.9;
-  color: #f7f3e9;
+  color: #f0f4ff;
 }
 .hero .btn {
   display: inline-block;
   margin-top: 25px;
   padding: 12px 30px;
-  border: 1px solid #f7d29b;
-  color: #f7d29b;
+  border: 2px solid #ffffff;
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s;
 }
 .hero .btn:hover {
-  background: #f7d29b;
-  color: #2c1b0e;
-  box-shadow: 0 0 15px rgba(247, 210, 155, 0.5);
+  background: #ffffff;
+  color: #4b3de6;
+  box-shadow: 0 0 15px rgba(255,255,255,0.6);
 }
 
-/* GALLERY / CARD LAYOUT */
+/* GALLERY / CARDS */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -86,16 +85,16 @@ nav a:hover {
   gap: 25px;
 }
 .card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   width: 280px;
   padding: 20px;
   transition: transform 0.3s, background 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .card:hover {
   transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
 }
 .card img {
   width: 100%;
@@ -104,29 +103,14 @@ nav a:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .card h3 {
-  color: #f7d29b;
+  color: #ffffff;
   font-family: 'Cinzel', serif;
   margin-bottom: 8px;
 }
 .card p {
   font-size: 0.95em;
-  color: #f7f3e9;
+  color: #f2f5ff;
   opacity: 0.9;
-}
-
-/* PALETTE PAGE */
-.palette img {
-  width: 60%;
-  margin: 30px auto;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-.palette ul {
-  list-style: none;
-  font-size: 1.1em;
-  line-height: 1.8em;
-  color: #f7f3e9;
 }
 
 /* CONTACT / REFLECTION */
@@ -136,7 +120,7 @@ nav a:hover {
   margin: auto;
 }
 .contact a {
-  color: #f7d29b;
+  color: #fff;
   text-decoration: none;
 }
 .contact a:hover {
@@ -147,8 +131,9 @@ nav a:hover {
 footer {
   margin-top: 40px;
   padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.9em;
   opacity: 0.8;
-  color: #f5e8d0;
+  color: #ffffff;
 }
+
