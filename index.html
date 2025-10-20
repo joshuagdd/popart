@@ -19,9 +19,25 @@
   </header>
 
   <section class="hero">
-    <h2>The future of design.</h2>
+    <h2>The future of design</h2>
     <p>Explore the evolving world of design through color, composition, and emotion.</p>
     <a class="btn" href="trends.html">Discover the Art</a>
+    h2.animated-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5em;
+  background: linear-gradient(90deg, #9b5de5, #f9d923, #00bbf9);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
   </section>
 
   <footer>© 2025 PopArt Exhibit</footer>
